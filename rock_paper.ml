@@ -4,12 +4,13 @@ print_string "Welcome to the rock-paper-scissors game!\n";;
 print_string "****************************************\n";;
 
 (*Player's choice*)
-print_string "What is your choice? 1 for Rock, 2 for Paper, 3 for Scissors: ";;
+print_string "What is your choice? 1 for Rock, 2 for Paper, 3 for Scissors, 0 to exit: ";;
 
 let pchoice = match read_int () with
 	| 1 -> "Rock"
 	| 2 -> "Scissors"
 	| 3 -> "Paper"
+	| 0 -> exit 0
 	| _ -> "Error"
 ;;
 
